@@ -7,27 +7,33 @@ const AboutSection = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0">
         {/* Left: Image, Swoosh, Badge, Effects */}
         <div className="relative flex-shrink-0 flex justify-center items-center w-full md:w-1/2 min-h-[340px] md:min-h-[400px]">
-          {/* Animated Dots Background */}
+          {/* Animated Floating Particles */}
           <div className="absolute inset-0 z-0 pointer-events-none">
             <div className="absolute top-8 left-12 w-4 h-4 bg-orange-200 rounded-full opacity-70 animate-pulse" />
             <div className="absolute bottom-10 right-16 w-3 h-3 bg-indigo-200 rounded-full opacity-60 animate-pulse" />
             <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-blue-200 rounded-full opacity-50 animate-pulse" />
+            <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-orange-300 rounded-full opacity-60 animate-bounce" />
+            <div className="absolute top-1/4 right-1/3 w-3 h-3 bg-indigo-100 rounded-full opacity-40 animate-pulse" />
           </div>
-          {/* Swoosh SVG */}
-          <svg className="absolute -top-6 -left-10 md:-top-10 md:-left-16 w-[340px] h-[180px] md:w-[420px] md:h-[220px] z-0" viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,70 Q210,-70 420,70 Q280,220 0,70" fill="#FFD580" fillOpacity="0.8" />
+          {/* Radial Light Burst */}
+          <div className="absolute z-0 w-80 h-80 md:w-[400px] md:h-[400px] rounded-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" style={{background: 'radial-gradient(circle, rgba(99,102,241,0.10) 0%, rgba(255,255,255,0) 70%)'}}></div>
+          {/* Swoosh SVG (more dynamic) */}
+          <svg className="absolute -top-8 -left-14 md:-top-14 md:-left-20 w-[380px] h-[200px] md:w-[480px] md:h-[260px] z-0" viewBox="0 0 480 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,90 Q240,-90 480,90 Q320,260 0,90" fill="#FFD580" fillOpacity="0.85" />
           </svg>
+          {/* Animated Gradient Ring */}
+          <span className="absolute z-10 w-64 h-64 md:w-96 md:h-96 rounded-full animate-spin-slow bg-gradient-to-tr from-orange-300 via-indigo-200 to-blue-200 opacity-60 blur-2xl" style={{animationDuration: '8s'}}></span>
           {/* Circular Image with Glow */}
-          <div className="relative z-10 w-56 h-56 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white bg-gray-100 flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-tr before:from-orange-200 before:to-indigo-200 before:blur-xl before:opacity-60">
+          <div className="relative z-20 w-56 h-56 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white bg-gray-100 flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-tr before:from-orange-200 before:to-indigo-200 before:blur-xl before:opacity-60">
             <img
               src="https://img.freepik.com/free-photo/group-young-african-males-discussing-project-while-using-their-laptop-phones_181624-45059.jpg?uid=R204178159&ga=GA1.1.502612312.1749817823&semt=ais_hybrid&w=740"
               alt="MugoTech Team"
               className="object-cover w-full h-full relative z-10"
             />
           </div>
-          {/* Experience Badge with Glassmorphism */}
-          <div className="absolute -top-8 -left-8 md:-top-12 md:-left-12 z-20 flex flex-col items-center justify-center w-24 h-24 md:w-32 md:h-32 bg-white/60 backdrop-blur-md border border-orange-100 shadow-2xl rounded-full">
-            <span className="text-orange-500 text-3xl md:text-4xl font-bold drop-shadow">25+</span>
+          {/* Experience Badge with Glassmorphism, Glow, and Shadow */}
+          <div className="absolute -top-8 -left-8 md:-top-12 md:-left-12 z-30 flex flex-col items-center justify-center w-24 h-24 md:w-32 md:h-32 bg-white/60 backdrop-blur-md border-2 border-orange-300 shadow-2xl rounded-full ring-4 ring-orange-200/40">
+            <span className="text-orange-500 text-3xl md:text-4xl font-bold drop-shadow-lg">25+</span>
             <span className="text-gray-700 text-xs md:text-sm mt-1 text-center font-medium">Years of Experience</span>
           </div>
         </div>
