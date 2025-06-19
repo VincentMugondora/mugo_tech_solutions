@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <g fill="#61DAFB">
+    <circle cx="50" cy="50" r="10"/>
+    <path d="M50,20c13.8,0,25,2.7,25,7s-11.2,7-25,7s-25-2.7-25-7S36.2,20,50,20z" transform="rotate(60 50 50)"/>
+    <path d="M50,20c13.8,0,25,2.7,25,7s-11.2,7-25,7s-25-2.7-25-7S36.2,20,50,20z" transform="rotate(120 50 50)"/>
+    <path d="M50,20c13.8,0,25,2.7,25,7s-11.2,7-25,7s-25-2.7-25-7S36.2,20,50,20z" transform="rotate(180 50 50)"/>
+    <path d="M50,20c13.8,0,25,2.7,25,7s-11.2,7-25,7s-25-2.7-25-7S36.2,20,50,20z" transform="rotate(240 50 50)"/>
+    <path d="M50,20c13.8,0,25,2.7,25,7s-11.2,7-25,7s-25-2.7-25-7S36.2,20,50,20z" transform="rotate(300 50 50)"/>
+  </g>
+</svg> 
