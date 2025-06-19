@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gradient-to-r from-blue-100 to-indigo-100 shadow-lg w-full">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur shadow-md">
       <nav className="w-full bg-white/70 backdrop-blur-md border-b border-white/40 shadow-xl rounded-none px-0 py-4 md:py-5">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between px-5">
           {/* Logo */}
@@ -149,4 +149,6 @@ export default function Header() {
       )}
     </header>
   );
-}
+};
+
+export default Header;
