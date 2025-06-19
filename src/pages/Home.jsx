@@ -8,6 +8,7 @@ import PricingPlans from '../components/home/PricingPlans'
 import MarketingHero from '../components/home/MarketingHero'
 import TopServices from '../components/home/TopServices'
 import ProjectSatisfaction from '../components/home/ProjectSatisfaction'
+import ContactSection from '../components/home/ContactSection'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <MarketingHero />
         <TopServices />
         <ProjectSatisfaction />
+        <ContactSection />
     </div>
   )
 }
