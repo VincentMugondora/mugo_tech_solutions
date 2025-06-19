@@ -47,27 +47,27 @@ const RealPeopleSection = () => (
       </div>
     </div>
     {/* Right: Team image with swoosh and badge */}
-    <div className="flex-1 flex items-center justify-center relative min-w-[320px]">
+    <div className="flex-[1.3] flex items-center justify-center relative min-w-[380px]">
       <div className="relative flex items-center justify-center">
         {/* Animated Orange swoosh/shape */}
-        <svg className="absolute -top-10 -right-10 w-80 h-80 z-0 animate-float" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" style={{animation: 'float 8s ease-in-out infinite alternate'}}>
+        <svg className="absolute -top-16 -right-16 w-[420px] h-[340px] z-0 animate-float" viewBox="0 0 400 340" fill="none" xmlns="http://www.w3.org/2000/svg" style={{animation: 'float 8s ease-in-out infinite alternate'}}>
           <defs>
             <linearGradient id="swooshGradient" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0%" stopColor="#FF9944" stopOpacity="0.35" />
               <stop offset="100%" stopColor="#FF9944" stopOpacity="0.15" />
             </linearGradient>
           </defs>
-          <path d="M220 40C270 100 270 200 180 250C90 300 30 200 60 120C90 40 170-20 220 40Z" fill="url(#swooshGradient)" />
+          <path d="M320 40C370 120 370 260 260 320C150 380 50 260 80 160C110 60 270-40 320 40Z" fill="url(#swooshGradient)" />
         </svg>
         <img
-          src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=facearea&w=400&h=400&facepad=2&q=80"
+          src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=facearea&w=600&h=400&facepad=2&q=80"
           alt="MugoTech Team"
-          className="w-72 h-56 object-cover rounded-3xl border-8 border-white shadow-2xl relative z-10 transition-transform duration-500 hover:scale-105"
+          className="w-[370px] h-[260px] object-cover rounded-3xl border-8 border-white shadow-2xl relative z-10 transition-transform duration-500 hover:scale-105"
         />
         {/* 25+ Years badge */}
-        <div className="absolute -top-8 -right-8 bg-white/80 backdrop-blur-md rounded-2xl px-8 py-5 shadow-2xl flex flex-col items-center z-20 border border-gray-100 animate-bounce-slow" style={{boxShadow: '0 8px 32px 0 rgba(255,153,68,0.15)'}}>
-          <span className="text-3xl font-extrabold text-[#FF9944] leading-none">25+</span>
-          <span className="text-xs text-indigo-800 font-semibold whitespace-nowrap">Years of Experience</span>
+        <div className="absolute -top-10 -right-10 bg-white/80 backdrop-blur-md rounded-2xl px-10 py-7 shadow-2xl flex flex-col items-center z-20 border border-gray-100 animate-bounce-slow" style={{boxShadow: '0 8px 32px 0 rgba(255,153,68,0.15)'}}>
+          <span className="text-4xl font-extrabold text-[#FF9944] leading-none">25+</span>
+          <span className="text-sm text-indigo-800 font-semibold whitespace-nowrap">Years of Experience</span>
         </div>
       </div>
     </div>
