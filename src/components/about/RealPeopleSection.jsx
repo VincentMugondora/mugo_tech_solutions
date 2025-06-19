@@ -8,8 +8,8 @@ const services = [
         <span className="absolute inset-0 rounded-full blur-sm opacity-40 bg-[#FF9944]" style={{zIndex: -1}}></span>
       </span>
     ),
-    title: 'Marketing Agency',
-    desc: 'Ligula mattis mollis felis euismod diam conubia facilisi quam efficitur senectus luctus.'
+    title: 'Cloud Solutions',
+    desc: 'Seamlessly migrate, manage, and scale your business in the cloud with our certified experts ensuring security and efficiency.'
   },
   {
     icon: (
@@ -18,8 +18,8 @@ const services = [
         <span className="absolute inset-0 rounded-full blur-sm opacity-40 bg-[#FF9944]" style={{zIndex: -1}}></span>
       </span>
     ),
-    title: 'SEO Services',
-    desc: 'Ligula mattis mollis felis euismod diam conubia facilisi quam efficitur senectus luctus.'
+    title: 'IT Consulting',
+    desc: 'Transform your operations with strategic IT guidance, tailored roadmaps, and hands-on support from industry veterans.'
   }
 ];
 
@@ -37,9 +37,9 @@ const RealPeopleSection = () => (
         <div className="flex items-start gap-3 mb-3">
           {/* Animated Dashed arrow accent */}
           <svg width="36" height="36" className="mt-2 hidden md:block animate-wiggle" fill="none" xmlns="http://www.w3.org/2000/svg" style={{animation: 'wiggle 2.5s infinite alternate'}}><path d="M34 2C20 12 8 18 2 20" stroke="#FF9944" strokeWidth="2" strokeDasharray="4 4" strokeLinecap="round"/></svg>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-indigo-900 leading-tight">Real people delivering <span className="text-[#FF9944]">real results.</span></h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-indigo-900 leading-tight">Real people. Real technology. <span className="text-[#FF9944]">Real results.</span></h2>
         </div>
-        <p className="text-indigo-700 mb-8 text-lg">Pharetra ornare consequat ad ligula facilisis habitasse pretium sollicitudin natoque. Ornare parturient hendrerit vulputate mi potenti per justo. Commodo eros amet ipsum himenaeos tincidunt.</p>
+        <p className="text-indigo-700 mb-8 text-lg">At MugoTech Solutions, our certified team partners with you to solve complex challenges, modernize your infrastructure, and accelerate growth. We're passionate about delivering secure, scalable, and innovative technology that drives measurable business value for every client.</p>
         <div className="space-y-5 w-full">
           {services.map((s) => (
             <div key={s.title} className="flex items-start gap-4">
