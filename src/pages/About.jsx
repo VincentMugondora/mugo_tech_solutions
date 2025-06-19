@@ -6,7 +6,6 @@ import StatsSection from '../components/about/StatsSection';
 import LogosRow from '../components/about/LogosRow';
 import TeamSection from '../components/about/TeamSection';
 import ContactTrialSection from '../components/about/ContactTrialSection';
-import Footer from '../components/Footer';
 
 const About = () => {
   return (
@@ -18,7 +17,6 @@ const About = () => {
       <LogosRow />
       <TeamSection />
       <ContactTrialSection />
-      <Footer />
     </div>
   )
 }
