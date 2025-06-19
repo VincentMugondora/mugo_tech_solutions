@@ -48,31 +48,51 @@ const AboutSection = () => {
           </svg>
           <span className="text-orange-500 text-xs font-semibold uppercase tracking-wider mb-2">Who We Are</span>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-2">
-            <span className="text-indigo-800">Real people delivering real results.</span>
+            <span className="text-indigo-800">Your Vision. Our Expertise. Real Results.</span>
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            At MugoTech Solutions, we blend innovation with expertise to deliver cutting-edge digital solutions. Our passionate team of tech enthusiasts is dedicated to transforming your vision into reality through modern technology and creative problem-solving.
+            At MugoTech Solutions, we're passionate about solving complex business challenges with technology. Our certified experts partner with you to deliver tailored solutions, from cloud migration to custom software, always with a focus on transparency, agility, and measurable impact.
           </p>
           {/* Services */}
           <div className="flex flex-col gap-4 mt-2">
             <div className="flex items-start gap-4">
               <div className="text-orange-500 text-2xl flex-shrink-0 mt-1">
-                {/* Web Development Icon */}
-                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2"><rect x="6" y="10" width="16" height="10" rx="2"/><path d="M6 10V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/></svg>
+                {/* Cloud Solutions Icon */}
+                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 18a4 4 0 0 0-3-7.87A5 5 0 1 0 6 17h11z" /></svg>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-900">Web Development</h4>
-                <p className="text-gray-500 text-sm">Custom web solutions built with modern technologies for optimal performance and user experience.</p>
+                <h4 className="text-lg font-semibold text-gray-900">Cloud Solutions</h4>
+                <p className="text-gray-500 text-sm">Seamless migration, management, and optimization of your cloud infrastructure for agility and scalability.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="text-orange-500 text-2xl flex-shrink-0 mt-1">
-                {/* Digital Innovation Icon */}
-                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2l4 8h8l-6.5 5.5L19 24l-5-4-5 4 1.5-8.5L2 10h8z"/></svg>
+                {/* IT Consulting Icon */}
+                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="14" cy="14" r="10" /><path d="M14 10v4l3 2" /></svg>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-900">Digital Innovation</h4>
-                <p className="text-gray-500 text-sm">Innovative solutions leveraging the latest technologies to drive business growth and efficiency.</p>
+                <h4 className="text-lg font-semibold text-gray-900">IT Consulting</h4>
+                <p className="text-gray-500 text-sm">Strategic guidance to align your technology with your business goals and drive digital transformation.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="text-orange-500 text-2xl flex-shrink-0 mt-1">
+                {/* Custom Software Icon */}
+                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2"><rect x="6" y="10" width="16" height="10" rx="2"/><path d="M6 10V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/></svg>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900">Custom Software</h4>
+                <p className="text-gray-500 text-sm">Bespoke applications designed to solve your unique business challenges and accelerate growth.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="text-orange-500 text-2xl flex-shrink-0 mt-1">
+                {/* Cybersecurity Icon */}
+                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 3l7 4v5c0 5-3.5 9.74-7 11-3.5-1.26-7-6-7-11V7l7-4z" /><circle cx="12" cy="12" r="3" /></svg>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900">Cybersecurity</h4>
+                <p className="text-gray-500 text-sm">Comprehensive protection for your data, systems, and reputation with proactive security solutions.</p>
               </div>
             </div>
           </div>

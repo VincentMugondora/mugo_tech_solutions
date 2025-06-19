@@ -13,11 +13,11 @@ export default function HeroSection() {
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            Transform Your Business<br />
-            With Modern Technology
+            Empowering Your Business<br />
+            with Next-Gen Technology
           </h1>
           <p className="text-gray-600 mb-7 max-w-md">
-            We deliver cutting-edge software solutions, from web and mobile applications to cloud infrastructure and digital transformation services. Let's build your digital future together.
+            MugoTech Solutions delivers innovative software, cloud, and cybersecurity services to help you scale, secure, and succeed in the digital era.
           </p>
           <div className="flex items-center gap-4">
             <button className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold px-6 py-3 rounded-md shadow hover:from-indigo-700 hover:to-blue-700 transition">
@@ -61,7 +61,7 @@ export default function HeroSection() {
             </div>
             <div>
               <div className="font-bold text-gray-700 text-lg">50+</div>
-              <div className="text-xs text-gray-400">Expert Devs</div>
+              <div className="text-xs text-gray-400">Expert Engineers</div>
             </div>
           </div>
           {/* Client Satisfaction Card (compact) */}
@@ -71,7 +71,7 @@ export default function HeroSection() {
               <span className="font-semibold text-gray-800 text-xs">Client Satisfaction</span>
             </div>
             <div className="flex items-center gap-1 mb-2">
-              <span className="text-lg font-bold text-indigo-600">98%</span>
+              <span className="text-lg font-bold text-indigo-600">4.9/5</span>
               <span className="flex items-center">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <FaStar key={star} className="w-2.5 h-2.5 text-yellow-400" />
@@ -116,7 +116,7 @@ export default function HeroSection() {
                 <span className="w-4 h-4 rounded-full bg-indigo-200 flex items-center justify-center"><FaUsers className="w-2.5 h-2.5 text-indigo-600" /></span>
                 <span className="w-4 h-4 rounded-full bg-blue-200 flex items-center justify-center"><FaUsers className="w-2.5 h-2.5 text-blue-600" /></span>
               </span>
-              <span className="text-[10px] text-gray-500"><span className="font-semibold text-gray-700">50+</span> active clients</span>
+              <span className="text-[10px] text-gray-500"><span className="font-semibold text-gray-700">150+</span> satisfied clients</span>
             </div>
           </div>
         </div>

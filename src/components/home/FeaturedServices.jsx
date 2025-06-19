@@ -2,48 +2,46 @@ import React from "react";
 
 const services = [
   {
-    title: "Consultations",
+    title: "IT Consulting",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      "Strategic guidance to align your technology with your business goals and drive digital transformation.",
     icon: (
-      <svg width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <rect x="3" y="5" width="18" height="14" rx="3" />
-        <path d="M8 10h8M8 14h4" />
+      <svg width="32" height="32" fill="none" stroke="#2563eb" strokeWidth="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 6v6l4 2" />
       </svg>
     ),
     gradient: true,
   },
   {
-    title: "Search Engine Optimization",
+    title: "Cloud Solutions",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      "Seamless migration, management, and optimization of your cloud infrastructure for agility and scalability.",
     icon: (
-      <svg width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M12 6v6l4 2" />
+      <svg width="32" height="32" fill="none" stroke="#1e40af" strokeWidth="2" viewBox="0 0 24 24">
+        <path d="M17 18a4 4 0 0 0-3-7.87A5 5 0 1 0 6 17h11z" />
       </svg>
     ),
   },
   {
-    title: "Paid Media Management",
+    title: "Custom Software Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      "Bespoke applications designed to solve your unique business challenges and accelerate growth.",
     icon: (
-      <svg width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <rect x="4" y="4" width="16" height="16" rx="4" />
-        <path d="M8 12h8M12 8v8" />
+      <svg width="32" height="32" fill="none" stroke="#2563eb" strokeWidth="2" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="3" />
+        <path d="M8 10h8M8 14h4" />
       </svg>
     ),
   },
   {
-    title: "Social Media Management",
+    title: "Cybersecurity",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      "Comprehensive protection for your data, systems, and reputation with proactive security solutions.",
     icon: (
-      <svg width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <circle cx="6" cy="12" r="2" />
-        <circle cx="12" cy="12" r="2" />
-        <circle cx="18" cy="12" r="2" />
+      <svg width="32" height="32" fill="none" stroke="#f59e42" strokeWidth="2" viewBox="0 0 24 24">
+        <path d="M12 3l7 4v5c0 5-3.5 9.74-7 11-3.5-1.26-7-6-7-11V7l7-4z" />
+        <circle cx="12" cy="12" r="3" />
       </svg>
     ),
   },
