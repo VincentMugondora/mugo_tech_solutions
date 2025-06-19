@@ -46,7 +46,7 @@ const AboutSection = () => {
             <path d="M0 28 Q35 0 70 28" stroke="#FF9900" strokeWidth="3" strokeDasharray="6 6" fill="none" />
             <polygon points="68,26 70,28 68,30" fill="#FF9900" />
           </svg>
-          <span className="text-orange-500 text-xs font-semibold uppercase tracking-wider mb-2">Who We Are</span>
+          <span className="text-[#FF9944] text-xs font-semibold uppercase tracking-wider mb-2">Who We Are</span>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-2">
             <span className="text-indigo-800">Your Vision. Our Expertise. Real Results.</span>
           </h2>
@@ -56,9 +56,9 @@ const AboutSection = () => {
           {/* Services */}
           <div className="flex flex-col gap-4 mt-2">
             <div className="flex items-start gap-4">
-              <div className="text-orange-500 text-2xl flex-shrink-0 mt-1">
+              <div className="text-[#FF9944] text-2xl flex-shrink-0 mt-1">
                 {/* Cloud Solutions Icon */}
-                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 18a4 4 0 0 0-3-7.87A5 5 0 1 0 6 17h11z" /></svg>
+                <svg width="28" height="28" fill="none" stroke="#FF9944" strokeWidth="2"><path d="M17 18a4 4 0 0 0-3-7.87A5 5 0 1 0 6 17h11z" /></svg>
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">Cloud Solutions</h4>
@@ -66,9 +66,9 @@ const AboutSection = () => {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="text-orange-500 text-2xl flex-shrink-0 mt-1">
+              <div className="text-[#FF9944] text-2xl flex-shrink-0 mt-1">
                 {/* IT Consulting Icon */}
-                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="14" cy="14" r="10" /><path d="M14 10v4l3 2" /></svg>
+                <svg width="28" height="28" fill="none" stroke="#FF9944" strokeWidth="2"><circle cx="14" cy="14" r="10" /><path d="M14 10v4l3 2" /></svg>
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">IT Consulting</h4>
@@ -76,9 +76,9 @@ const AboutSection = () => {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="text-orange-500 text-2xl flex-shrink-0 mt-1">
+              <div className="text-[#FF9944] text-2xl flex-shrink-0 mt-1">
                 {/* Custom Software Icon */}
-                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2"><rect x="6" y="10" width="16" height="10" rx="2"/><path d="M6 10V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/></svg>
+                <svg width="28" height="28" fill="none" stroke="#FF9944" strokeWidth="2"><rect x="6" y="10" width="16" height="10" rx="2"/><path d="M6 10V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/></svg>
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">Custom Software</h4>
@@ -86,9 +86,9 @@ const AboutSection = () => {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="text-orange-500 text-2xl flex-shrink-0 mt-1">
+              <div className="text-[#FF9944] text-2xl flex-shrink-0 mt-1">
                 {/* Cybersecurity Icon */}
-                <svg width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 3l7 4v5c0 5-3.5 9.74-7 11-3.5-1.26-7-6-7-11V7l7-4z" /><circle cx="12" cy="12" r="3" /></svg>
+                <svg width="28" height="28" fill="none" stroke="#FF9944" strokeWidth="2"><path d="M12 3l7 4v5c0 5-3.5 9.74-7 11-3.5-1.26-7-6-7-11V7l7-4z" /><circle cx="12" cy="12" r="3" /></svg>
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">Cybersecurity</h4>

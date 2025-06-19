@@ -7,6 +7,7 @@ import WhyChooseUs from '../components/home/WhyChooseUs'
 import PricingPlans from '../components/home/PricingPlans'
 import MarketingHero from '../components/home/MarketingHero'
 import TopServices from '../components/home/TopServices'
+import ProjectSatisfaction from '../components/home/ProjectSatisfaction'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <PricingPlans />
         <MarketingHero />
         <TopServices />
+        <ProjectSatisfaction />
     </div>
   )
 }

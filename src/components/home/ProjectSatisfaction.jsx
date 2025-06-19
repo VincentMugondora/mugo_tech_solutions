@@ -3,19 +3,35 @@ import React from "react";
 const ProjectSatisfaction = () => {
   return (
     <section className="py-16 px-4 md:px-0 bg-white flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0">
-      {/* Left: Circular Image with Swoosh */}
-      <div className="relative flex-shrink-0 flex justify-center items-center w-full md:w-1/2 mb-8 md:mb-0">
-        {/* Swoosh SVG */}
-        <svg className="absolute -top-8 -left-8 md:-top-12 md:-left-12 w-[340px] h-[180px] md:w-[420px] md:h-[220px] z-0" viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,70 Q210,-70 420,70 Q280,220 0,70" fill="#FFD580" fillOpacity="0.7" />
-        </svg>
-        {/* Circular Image */}
-        <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-white bg-gray-100 flex items-center justify-center">
-          <img
-            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80"
-            alt="Team working"
-            className="object-cover w-full h-full"
-          />
+      {/* Left: Card-Style Collage with Accent */}
+      <div className="relative flex-shrink-0 flex justify-center items-center w-full md:w-1/2 mb-8 md:mb-0 min-h-[320px]">
+        {/* Card with gradient bar */}
+        <div className="relative w-96 max-w-full h-64 bg-white rounded-2xl shadow-2xl flex items-center overflow-visible">
+          {/* Vertical Gradient Bar */}
+          <div className="absolute left-0 top-0 h-full w-3 rounded-l-2xl bg-gradient-to-b from-blue-500 to-blue-300" />
+          {/* Trophy Badge */}
+          <div className="absolute top-4 right-4 z-20 flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-400/90 shadow text-white text-xs font-bold">
+            <svg width="18" height="18" fill="none" stroke="white" strokeWidth="2" viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 8V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3M5 8h14v2a7 7 0 0 1-14 0V8z" /></svg>
+            Top Rated
+          </div>
+          {/* Collage of Overlapping Images */}
+          <div className="flex items-center justify-center w-full h-full pl-8 pr-8">
+            <img
+              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=400&q=80"
+              alt="Team 1"
+              className="w-28 h-28 object-cover rounded-xl shadow-lg border-4 border-white -rotate-6 -ml-4 z-10"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80"
+              alt="Team 2"
+              className="w-28 h-28 object-cover rounded-xl shadow-lg border-4 border-white rotate-3 -ml-8 z-20"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80"
+              alt="Team 3"
+              className="w-24 h-24 object-cover rounded-xl shadow-lg border-4 border-white rotate-12 -ml-8 z-0"
+            />
+          </div>
         </div>
       </div>
       {/* Right: Content */}

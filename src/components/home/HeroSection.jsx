@@ -20,7 +20,7 @@ export default function HeroSection() {
             MugoTech Solutions delivers innovative software, cloud, and cybersecurity services to help you scale, secure, and succeed in the digital era.
           </p>
           <div className="flex items-center gap-4">
-            <button className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold px-6 py-3 rounded-md shadow hover:from-indigo-700 hover:to-blue-700 transition">
+            <button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">
               GET STARTED
             </button>
             <button className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-indigo-300 bg-white text-indigo-600 hover:bg-indigo-50 transition">
