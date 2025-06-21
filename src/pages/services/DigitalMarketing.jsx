@@ -40,18 +40,20 @@ const contactInfo = {
 };
 
 const DigitalMarketing = () => (
-  <ServicePageTemplate
-    icon={<svg width="32" height="32" fill="none" stroke="#FF9944" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M8 12h8M12 8v8" /></svg>}
-    title="Digital Marketing"
-    intro="Grow your brand and reach new audiences with data-driven digital marketing strategies."
-    image="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
-    description="Our digital marketing services help you connect with your audience, build your brand, and drive measurable results. From content marketing to PPC, we offer a full suite of solutions to grow your business online."
-    features={features}
-    otherServices={otherServices}
-    currentService="Digital Marketing"
-    contactInfo={contactInfo}
-    cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
-  />
+  <div className="mt-24">
+    <ServicePageTemplate
+      icon={<svg width="32" height="32" fill="none" stroke="#FF9944" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M8 12h8M12 8v8" /></svg>}
+      title="Digital Marketing"
+      intro="Grow your brand and reach new audiences with data-driven digital marketing strategies."
+      image="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+      description="Our digital marketing services help you connect with your audience, build your brand, and drive measurable results. From content marketing to PPC, we offer a full suite of solutions to grow your business online."
+      features={features}
+      otherServices={otherServices}
+      currentService="Digital Marketing"
+      contactInfo={contactInfo}
+      cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
+    />
+  </div>
 );
 
 export default DigitalMarketing; 

@@ -40,18 +40,20 @@ const contactInfo = {
 };
 
 const SEO = () => (
-  <ServicePageTemplate
-    icon={<svg width="32" height="32" fill="none" stroke="#FF9944" strokeWidth="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" /></svg>}
-    title="SEO (Search Engine Optimization)"
-    intro="Boost your website's visibility and ranking with expert SEO services."
-    image="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
-    description="Our SEO services help your business get found online. We use proven strategies to improve your search rankings, drive more traffic, and increase conversions."
-    features={features}
-    otherServices={otherServices}
-    currentService="SEO"
-    contactInfo={contactInfo}
-    cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
-  />
+  <div className="mt-24">
+    <ServicePageTemplate
+      icon={<svg width="32" height="32" fill="none" stroke="#FF9944" strokeWidth="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" /></svg>}
+      title="SEO (Search Engine Optimization)"
+      intro="Boost your website's visibility and ranking with expert SEO services."
+      image="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+      description="Our SEO services help your business get found online. We use proven strategies to improve your search rankings, drive more traffic, and increase conversions."
+      features={features}
+      otherServices={otherServices}
+      currentService="SEO"
+      contactInfo={contactInfo}
+      cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
+    />
+  </div>
 );
 
 export default SEO; 

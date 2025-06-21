@@ -40,6 +40,8 @@ const contactInfo = {
 };
 
 const Cybersecurity = () => (
+  <div className="mt-24">
+    <ServicePageTemplate
   <ServicePageTemplate
     icon={<svg width="32" height="32" fill="none" stroke="#f59e42" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.5 9.74-7 11-3.5-1.26-7-6-7-11V7l7-4z" /><circle cx="12" cy="12" r="3" /></svg>}
     title="Cybersecurity"

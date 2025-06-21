@@ -40,18 +40,20 @@ const contactInfo = {
 };
 
 const Design = () => (
-  <ServicePageTemplate
-    icon={<svg width="32" height="32" fill="none" stroke="#FF9944" strokeWidth="2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" /><path d="M8 8h8M8 12h8M8 16h4" /></svg>}
-    title="Graphics and UI/UX Design"
-    intro="Creative solutions for brand identity, user experience, and visual storytelling."
-    image="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
-    description="Our design services help you stand out in a crowded market. From brand identity to user interface design, we create visually stunning and highly usable experiences for your customers."
-    features={features}
-    otherServices={otherServices}
-    currentService="Graphics and UI/UX Design"
-    contactInfo={contactInfo}
-    cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
-  />
+  <div className="mt-24">
+    <ServicePageTemplate
+      icon={<svg width="32" height="32" fill="none" stroke="#FF9944" strokeWidth="2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" /><path d="M8 8h8M8 12h8M8 16h4" /></svg>}
+      title="Graphics and UI/UX Design"
+      intro="Creative solutions for brand identity, user experience, and visual storytelling."
+      image="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+      description="Our design services help you stand out in a crowded market. From brand identity to user interface design, we create visually stunning and highly usable experiences for your customers."
+      features={features}
+      otherServices={otherServices}
+      currentService="Graphics and UI/UX Design"
+      contactInfo={contactInfo}
+      cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
+    />
+  </div>
 );
 
 export default Design; 
