@@ -16,9 +16,9 @@ const Services = () => {
       <ServicesPageHero />
       <ServicesIntroSection />
       <FeaturedServices />
+      <MarketingHero />
       <ServicesHero />
       <ServicesIntro />
-      <MarketingHero />
       <WhyChooseUs />
       <TopServicesGrid />
       <Testimonials />
