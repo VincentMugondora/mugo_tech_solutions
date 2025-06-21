@@ -6,7 +6,6 @@ import FeaturedServices from '../components/services/FeaturedServices';
 import MarketingHero from '../components/services/MarketingHero';
 import WhyChooseUs from '../components/services/WhyChooseUs';
 import TopServicesGrid from '../components/services/TopServicesGrid';
-import Testimonials from '../components/services/Testimonials';
 import TestimonialsSection from '../components/services/TestimonialsSection';
 import GetFreeTrial from '../components/services/GetFreeTrial';
 import ContactTrialSection from '../components/about/ContactTrialSection';
