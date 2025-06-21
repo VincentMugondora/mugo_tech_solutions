@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutHero = () => (
   <section
-    className="relative flex flex-col items-center justify-center py-24 md:py-32 mt-24 rounded-3xl overflow-hidden mb-8"
+    className="relative flex flex-col items-center justify-center py-24 md:py-32 mt-16 overflow-hidden mb-8"
     style={{
       backgroundImage:
         "linear-gradient(rgba(49,46,129,0.65),rgba(99,102,241,0.35)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80')",

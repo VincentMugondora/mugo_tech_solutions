@@ -30,9 +30,9 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur shadow-md">
       <nav className="w-full bg-white/70 backdrop-blur-md border-b border-white/40 shadow-xl rounded-none px-0 py-4 md:py-5">
-        <div className="max-w-screen-xl mx-auto flex items-center justify-between px-5">
+        <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center md:space-x-8 px-5">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center mb-4 md:mb-0 md:mr-8">
             <span className="text-2xl md:text-3xl font-extrabold text-indigo-900 flex items-center">
               <span className="mr-2">
                 {/* Simple logo shape */}
@@ -46,7 +46,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Nav */}
-          <ul className="hidden md:flex items-center space-x-8 font-semibold text-base md:text-lg text-gray-700">
+          <ul className="md:flex items-center space-x-8 font-semibold text-base md:text-lg text-gray-700 justify-center">
             {[
               { label: "Home", to: "/" },
               { label: "About Us", to: "/about" },
@@ -118,7 +118,7 @@ const Header = () => {
           </ul>
 
           {/* Get Started Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:block md:ml-8">
             <Link
               to="/contact"
               className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-bold text-base px-6 py-2.5 rounded-lg shadow-md hover:from-indigo-700 hover:to-blue-700 transition"
