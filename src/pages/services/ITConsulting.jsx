@@ -40,18 +40,20 @@ const contactInfo = {
 };
 
 const ITConsulting = () => (
-  <ServicePageTemplate
-    icon={<svg width="32" height="32" fill="none" stroke="#2563eb" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>}
-    title="IT Consulting"
-    intro="Expert guidance to align your technology with your business goals and drive digital transformation."
-    image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
-    description="Our IT consulting services help you develop and implement technology strategies that support your business objectives. We work closely with you to assess your current IT environment, identify opportunities for improvement, and create a roadmap for success."
-    features={features}
-    otherServices={otherServices}
-    currentService="IT Consulting"
-    contactInfo={contactInfo}
-    cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
-  />
+  <div className="mt-24">
+    <ServicePageTemplate
+      icon={<svg width="32" height="32" fill="none" stroke="#2563eb" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>}
+      title="IT Consulting"
+      intro="Expert guidance to align your technology with your business goals and drive digital transformation."
+      image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+      description="Our IT consulting services help you develop and implement technology strategies that support your business objectives. We work closely with you to assess your current IT environment, identify opportunities for improvement, and create a roadmap for success."
+      features={features}
+      otherServices={otherServices}
+      currentService="IT Consulting"
+      contactInfo={contactInfo}
+      cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
+    />
+  </div>
 );
 
 export default ITConsulting; 

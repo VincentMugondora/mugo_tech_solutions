@@ -42,18 +42,18 @@ const contactInfo = {
 const Cybersecurity = () => (
   <div className="mt-24">
     <ServicePageTemplate
-  <ServicePageTemplate
-    icon={<svg width="32" height="32" fill="none" stroke="#f59e42" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.5 9.74-7 11-3.5-1.26-7-6-7-11V7l7-4z" /><circle cx="12" cy="12" r="3" /></svg>}
-    title="Cybersecurity"
-    intro="Comprehensive protection for your data, systems, and reputation with proactive security solutions."
-    image="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=400&q=80"
-    description="Our cybersecurity services provide end-to-end protection for your business. We help you identify vulnerabilities, respond to threats, and ensure compliance with industry standards."
-    features={features}
-    otherServices={otherServices}
-    currentService="Cybersecurity"
-    contactInfo={contactInfo}
-    cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
-  />
+      icon={<svg width="32" height="32" fill="none" stroke="#f59e42" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.5 9.74-7 11-3.5-1.26-7-6-7-11V7l7-4z" /><circle cx="12" cy="12" r="3" /></svg>}
+      title="Cybersecurity"
+      intro="Comprehensive protection for your data, systems, and reputation with proactive security solutions."
+      image="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=400&q=80"
+      description="Our cybersecurity services provide end-to-end protection for your business. We help you identify vulnerabilities, respond to threats, and ensure compliance with industry standards."
+      features={features}
+      otherServices={otherServices}
+      currentService="Cybersecurity"
+      contactInfo={contactInfo}
+      cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
+    />
+  </div>
 );
 
 export default Cybersecurity; 
