@@ -40,18 +40,20 @@ const contactInfo = {
 };
 
 const CloudSolutions = () => (
-  <ServicePageTemplate
-    icon={<svg width="32" height="32" fill="none" stroke="#1e40af" strokeWidth="2" viewBox="0 0 24 24"><path d="M17 18a4 4 0 0 0-3-7.87A5 5 0 1 0 6 17h11z" /></svg>}
-    title="Cloud Solutions"
-    intro="Seamless migration, management, and optimization of your cloud infrastructure for agility and scalability."
-    image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
-    description="Our cloud solutions help you leverage the power of the cloud to drive innovation, efficiency, and growth. We provide end-to-end services from migration to management, ensuring your cloud environment is secure, scalable, and cost-effective."
-    features={features}
-    otherServices={otherServices}
-    currentService="Cloud Solutions"
-    contactInfo={contactInfo}
-    cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
-  />
+  <div className="mt-24">
+    <ServicePageTemplate
+      icon={<svg width="32" height="32" fill="none" stroke="#1e40af" strokeWidth="2" viewBox="0 0 24 24"><path d="M17 18a4 4 0 0 0-3-7.87A5 5 0 1 0 6 17h11z" /></svg>}
+      title="Cloud Solutions"
+      intro="Seamless migration, management, and optimization of your cloud infrastructure for agility and scalability."
+      image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+      description="Our cloud solutions help you leverage the power of the cloud to drive innovation, efficiency, and growth. We provide end-to-end services from migration to management, ensuring your cloud environment is secure, scalable, and cost-effective."
+      features={features}
+      otherServices={otherServices}
+      currentService="Cloud Solutions"
+      contactInfo={contactInfo}
+      cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
+    />
+  </div>
 );
 
 export default CloudSolutions; 
