@@ -3,7 +3,7 @@ import { FaPlay, FaStar, FaChartLine, FaUsers } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
-    <section className="bg-gradient-to-br from-indigo-50 via-white to-blue-50 py-8 md:py-16 px-4">
+    <section className="bg-gradient-to-br mt-12 from-indigo-50 via-white to-blue-50 py-8 md:py-16 px-4">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
         {/* Left Column */}
         <div className="flex-1 w-full">
