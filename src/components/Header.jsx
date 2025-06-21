@@ -77,6 +77,7 @@ const Header = () => {
                 onMouseEnter={handleServicesEnter}
                 onMouseLeave={handleServicesLeave}
               >
+                <li><Link to="/services" className="block px-5 py-2 font-bold text-indigo-700 hover:bg-indigo-50 transition">View All Services</Link></li>
                 <li><Link to="/services/it-consulting" className="block px-5 py-2 hover:bg-indigo-50 transition">IT Consulting</Link></li>
                 <li><Link to="/services/cloud-solutions" className="block px-5 py-2 hover:bg-indigo-50 transition">Cloud Solutions</Link></li>
                 <li><Link to="/services/custom-software" className="block px-5 py-2 hover:bg-indigo-50 transition">Custom Software Development</Link></li>
