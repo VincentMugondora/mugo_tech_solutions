@@ -1,3 +1,4 @@
+import React from 'react';
 import ServicesPageHero from '../components/services/ServicesPageHero';
 import ServicesHero from '../components/services/ServicesHero';
 import ServicesIntro from '../components/services/ServicesIntro';
