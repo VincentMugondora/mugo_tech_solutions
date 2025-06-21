@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur shadow-md">
       <nav className="w-full bg-white/70 backdrop-blur-md border-b border-white/40 shadow-xl rounded-none px-0 py-4 md:py-5">
-        <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center md:space-x-8 px-5">
+        <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-center md:space-x-8 px-4 md:px-8">
           {/* Logo */}
           <div className="flex items-center mb-4 md:mb-0 md:mr-8">
             <span className="text-2xl md:text-3xl font-extrabold text-indigo-900 flex items-center">
