@@ -34,11 +34,6 @@ const features = [
   },
 ];
 
-const contactInfo = {
-  support: "Support: 888-4004-234",
-  sales: "Sales: 888-8000-135",
-};
-
 const CloudSolutions = () => (
   <div className="mt-24">
     <ServicePageTemplate
@@ -50,7 +45,6 @@ const CloudSolutions = () => (
       features={features}
       otherServices={otherServices}
       currentService="Cloud Solutions"
-      contactInfo={contactInfo}
       cta={<button className="bg-[#FF9944] hover:bg-[#FF7A1A] text-white font-semibold px-6 py-3 rounded-md shadow transition">Get Started</button>}
     />
   </div>
