@@ -27,7 +27,7 @@ const Services = () => {
       <ServicesIntro />
       <WhyChooseUs />
       <TopServicesGrid />
-      <Testimonials />
+      <TestimonialsSection />
       <ContactTrialSection />
       <Footer />
     </div>
