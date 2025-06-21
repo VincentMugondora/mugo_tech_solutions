@@ -9,7 +9,11 @@ const ServicePageTemplate = ({
   features = [],
   otherServices = [],
   currentService = "",
-  contactInfo = {},
+  contactInfo = {
+    email: "vinmugondora@gmail.com",
+    phone1: "+263777530322",
+    phone2: "+263776477958",
+  },
   cta,
   heroBg = "https://images.unsplash.com/photo-1465101178521-c1a9136a3b43?auto=format&fit=crop&w=1200&q=80",
   children,
@@ -92,9 +96,10 @@ const ServicePageTemplate = ({
         </div>
         {contactInfo && (
           <div className="bg-orange-50 rounded-2xl shadow p-6">
-            <h4 className="text-lg font-bold text-orange-600 mb-2">Need Help?</h4>
-            <div className="mb-2 text-sm text-gray-700">{contactInfo.support}</div>
-            <div className="mb-2 text-sm text-gray-700">{contactInfo.sales}</div>
+            <h4 className="text-lg font-bold text-orange-600 mb-2">Contact Info</h4>
+            <div className="mb-2 text-sm text-gray-700">Email: <a href={`mailto:${contactInfo.email}`} className="text-blue-700 underline">{contactInfo.email}</a></div>
+            <div className="mb-2 text-sm text-gray-700">Phone 1: <a href={`tel:${contactInfo.phone1}`} className="text-blue-700 underline">{contactInfo.phone1}</a></div>
+            <div className="mb-2 text-sm text-gray-700">Phone 2: <a href={`tel:${contactInfo.phone2}`} className="text-blue-700 underline">{contactInfo.phone2}</a></div>
           </div>
         )}
       </aside>

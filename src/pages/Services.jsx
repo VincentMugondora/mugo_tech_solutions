@@ -20,6 +20,12 @@ const Services = () => {
       <TopServicesGrid />
       <TestimonialsSection />
       <GetFreeTrial />
+      <div className="max-w-2xl mx-auto my-8 p-6 bg-orange-50 rounded-2xl shadow text-center">
+        <h3 className="text-xl font-bold text-orange-600 mb-2">Contact Us</h3>
+        <div className="mb-1 text-gray-700">Email: <a href="mailto:vinmugondora@gmail.com" className="text-blue-700 underline">vinmugondora@gmail.com</a></div>
+        <div className="mb-1 text-gray-700">Phone 1: <a href="tel:+263777530322" className="text-blue-700 underline">+263777530322</a></div>
+        <div className="mb-1 text-gray-700">Phone 2: <a href="tel:+263776477958" className="text-blue-700 underline">+263776477958</a></div>
+      </div>
       <ContactTrialSection />
     </div>
   );

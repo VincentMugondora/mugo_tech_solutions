@@ -80,6 +80,11 @@ export default function Footer() {
             <a href="#" className="hover:underline">Cookie Policy</a>
           </div>
         </div>
+        <div className="mt-6 text-sm text-gray-500">
+          <div>Contact: <a href="mailto:vinmugondora@gmail.com" className="text-blue-700 underline">vinmugondora@gmail.com</a></div>
+          <div>Phone 1: <a href="tel:+263777530322" className="text-blue-700 underline">+263777530322</a></div>
+          <div>Phone 2: <a href="tel:+263776477958" className="text-blue-700 underline">+263776477958</a></div>
+        </div>
       </footer>
     </div>
   );
