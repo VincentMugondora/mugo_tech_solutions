@@ -1,7 +1,5 @@
 import React from 'react';
 import ServicesPageHero from '../components/services/ServicesPageHero';
-import ServicesHero from '../components/services/ServicesHero';
-import ServicesIntro from '../components/services/ServicesIntro';
 import ServicesIntroSection from '../components/services/ServicesIntroSection';
 import FeaturedServices from '../components/services/FeaturedServices';
 import MarketingHero from '../components/services/MarketingHero';
@@ -10,7 +8,6 @@ import TopServicesGrid from '../components/services/TopServicesGrid';
 import TestimonialsSection from '../components/services/TestimonialsSection';
 import GetFreeTrial from '../components/services/GetFreeTrial';
 import ContactTrialSection from '../components/about/ContactTrialSection';
-import Footer from '../components/Footer';
 
 const Services = () => {
   return (
@@ -23,13 +20,7 @@ const Services = () => {
       <TopServicesGrid />
       <TestimonialsSection />
       <GetFreeTrial />
-      <ServicesHero />
-      <ServicesIntro />
-      <WhyChooseUs />
-      <TopServicesGrid />
-      <TestimonialsSection />
       <ContactTrialSection />
-      <Footer />
     </div>
   );
 };
