@@ -1,9 +1,31 @@
 // src/components/Header.jsx
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
+  const servicesTimeout = useRef();
+  const resourcesTimeout = useRef();
+
+  // Handlers for Services dropdown
+  const handleServicesEnter = () => {
+    clearTimeout(servicesTimeout.current);
+    setServicesOpen(true);
+  };
+  const handleServicesLeave = () => {
+    servicesTimeout.current = setTimeout(() => setServicesOpen(false), 1000);
+  };
+
+  // Handlers for Resources dropdown
+  const handleResourcesEnter = () => {
+    clearTimeout(resourcesTimeout.current);
+    setResourcesOpen(true);
+  };
+  const handleResourcesLeave = () => {
+    resourcesTimeout.current = setTimeout(() => setResourcesOpen(false), 1000);
+  };
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur shadow-md">
@@ -39,14 +61,22 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            <li className="relative group">
+            <li
+              className="relative group"
+              onMouseEnter={handleServicesEnter}
+              onMouseLeave={handleServicesLeave}
+            >
               <button className="flex items-center relative transition-colors duration-200 hover:text-indigo-700 after:content-[''] after:block after:h-0.5 after:bg-gradient-to-r after:from-indigo-500 after:to-blue-500 after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded-full after:mt-1">
                 Services
                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <ul className="absolute left-0 mt-3 w-52 bg-white/90 backdrop-blur-md rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto text-base z-20 border border-white/40">
+              <ul
+                className={`absolute left-0 mt-3 w-52 bg-white/90 backdrop-blur-md rounded shadow-lg transition-opacity duration-200 text-base z-20 border border-white/40 ${servicesOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                onMouseEnter={handleServicesEnter}
+                onMouseLeave={handleServicesLeave}
+              >
                 <li><Link to="/services/it-consulting" className="block px-5 py-2 hover:bg-indigo-50 transition">IT Consulting</Link></li>
                 <li><Link to="/services/cloud-solutions" className="block px-5 py-2 hover:bg-indigo-50 transition">Cloud Solutions</Link></li>
                 <li><Link to="/services/custom-software" className="block px-5 py-2 hover:bg-indigo-50 transition">Custom Software Development</Link></li>
@@ -65,14 +95,22 @@ const Header = () => {
                 Contact Us
               </Link>
             </li>
-            <li className="relative group">
+            <li
+              className="relative group"
+              onMouseEnter={handleResourcesEnter}
+              onMouseLeave={handleResourcesLeave}
+            >
               <button className="flex items-center relative transition-colors duration-200 hover:text-indigo-700 after:content-[''] after:block after:h-0.5 after:bg-gradient-to-r after:from-indigo-500 after:to-blue-500 after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded-full after:mt-1">
                 Resources
                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <ul className="absolute left-0 mt-3 w-40 bg-white/90 backdrop-blur-md rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto text-base z-20 border border-white/40">
+              <ul
+                className={`absolute left-0 mt-3 w-40 bg-white/90 backdrop-blur-md rounded shadow-lg transition-opacity duration-200 text-base z-20 border border-white/40 ${resourcesOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                onMouseEnter={handleResourcesEnter}
+                onMouseLeave={handleResourcesLeave}
+              >
                 <li><Link to="/pages" className="block px-5 py-2 hover:bg-indigo-50 transition">Blog</Link></li>
                 <li><Link to="/pages" className="block px-5 py-2 hover:bg-indigo-50 transition">Case Studies</Link></li>
               </ul>
