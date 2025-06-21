@@ -2,42 +2,41 @@ import React from "react";
 
 const services = [
   {
-    title: "Consultations",
-    description: "Expert advice to help you navigate business challenges and seize new opportunities.",
+    title: "IT Consulting",
+    description: "Strategic guidance to align your technology with your business goals and drive digital transformation.",
     icon: (
-      <svg width="32" height="32" fill="none" stroke="#FF9944" strokeWidth="2" viewBox="0 0 24 24">
+      <svg width="32" height="32" fill="none" stroke="#2563eb" strokeWidth="2" viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="10" />
-        <path d="M12 8v4l3 2" />
+        <path d="M12 6v6l4 2" />
       </svg>
     ),
   },
   {
-    title: "Search Engine Optimization",
-    description: "Boost your online visibility and attract more customers with proven SEO strategies.",
+    title: "Cloud Solutions",
+    description: "Seamless migration, management, and optimization of your cloud infrastructure for agility and scalability.",
     icon: (
-      <svg width="32" height="32" fill="none" stroke="#FF9944" strokeWidth="2" viewBox="0 0 24 24">
-        <circle cx="11" cy="11" r="8" />
-        <path d="M21 21l-4.35-4.35" />
+      <svg width="32" height="32" fill="none" stroke="#1e40af" strokeWidth="2" viewBox="0 0 24 24">
+        <path d="M17 18a4 4 0 0 0-3-7.87A5 5 0 1 0 6 17h11z" />
       </svg>
     ),
   },
   {
-    title: "Paid Media Management",
-    description: "Maximize your ROI with expertly managed advertising campaigns across all platforms.",
+    title: "Custom Software Development",
+    description: "Bespoke applications designed to solve your unique business challenges and accelerate growth.",
     icon: (
-      <svg width="32" height="32" fill="none" stroke="#FF9944" strokeWidth="2" viewBox="0 0 24 24">
-        <rect x="4" y="4" width="16" height="16" rx="3" />
-        <path d="M8 12h8M12 8v8" />
+      <svg width="32" height="32" fill="none" stroke="#2563eb" strokeWidth="2" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="3" />
+        <path d="M8 10h8M8 14h4" />
       </svg>
     ),
   },
   {
-    title: "Social Media Management",
-    description: "Engage your audience and grow your brand with creative, consistent social media strategies.",
+    title: "Cybersecurity",
+    description: "Comprehensive protection for your data, systems, and reputation with proactive security solutions.",
     icon: (
-      <svg width="32" height="32" fill="none" stroke="#FF9944" strokeWidth="2" viewBox="0 0 24 24">
-        <rect x="3" y="5" width="18" height="14" rx="2" />
-        <path d="M3 7l9 6 9-6" />
+      <svg width="32" height="32" fill="none" stroke="#f59e42" strokeWidth="2" viewBox="0 0 24 24">
+        <path d="M12 3l7 4v5c0 5-3.5 9.74-7 11-3.5-1.26-7-6-7-11V7l7-4z" />
+        <circle cx="12" cy="12" r="3" />
       </svg>
     ),
   },
@@ -57,7 +56,7 @@ const FeaturedServices = () => (
           key={service.title}
           className="rounded-2xl shadow-lg p-8 flex flex-col items-center bg-white hover:shadow-2xl transition-all duration-300 h-full"
         >
-          <div className="mb-6 rounded-xl p-3 flex items-center justify-center bg-orange-100 text-orange-500">
+          <div className="mb-6 rounded-xl p-3 flex items-center justify-center bg-blue-100 text-blue-600">
             {service.icon}
           </div>
           <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">{service.title}</h3>
