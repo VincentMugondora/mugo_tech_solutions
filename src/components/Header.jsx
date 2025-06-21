@@ -47,10 +47,13 @@ const Header = () => {
                 </svg>
               </button>
               <ul className="absolute left-0 mt-3 w-52 bg-white/90 backdrop-blur-md rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto text-base z-20 border border-white/40">
-                <li><Link to="/services" className="block px-5 py-2 hover:bg-indigo-50 transition">Web Development</Link></li>
-                <li><Link to="/services" className="block px-5 py-2 hover:bg-indigo-50 transition">Mobile App Development</Link></li>
-                <li><Link to="/services" className="block px-5 py-2 hover:bg-indigo-50 transition">Cloud Solutions</Link></li>
-                <li><Link to="/services" className="block px-5 py-2 hover:bg-indigo-50 transition">IT Consulting</Link></li>
+                <li><Link to="/services/it-consulting" className="block px-5 py-2 hover:bg-indigo-50 transition">IT Consulting</Link></li>
+                <li><Link to="/services/cloud-solutions" className="block px-5 py-2 hover:bg-indigo-50 transition">Cloud Solutions</Link></li>
+                <li><Link to="/services/custom-software" className="block px-5 py-2 hover:bg-indigo-50 transition">Custom Software Development</Link></li>
+                <li><Link to="/services/cybersecurity" className="block px-5 py-2 hover:bg-indigo-50 transition">Cybersecurity</Link></li>
+                <li><Link to="/services/digital-marketing" className="block px-5 py-2 hover:bg-indigo-50 transition">Digital Marketing</Link></li>
+                <li><Link to="/services/seo" className="block px-5 py-2 hover:bg-indigo-50 transition">SEO</Link></li>
+                <li><Link to="/services/design" className="block px-5 py-2 hover:bg-indigo-50 transition">Graphics & UI/UX Design</Link></li>
               </ul>
             </li>
             <li>
@@ -119,10 +122,13 @@ const Header = () => {
               <details>
                 <summary className="cursor-pointer">Services</summary>
                 <ul className="ml-4 mt-2 space-y-1">
-                  <li><Link to="/services">Web Development</Link></li>
-                  <li><Link to="/services">Mobile App Development</Link></li>
-                  <li><Link to="/services">Cloud Solutions</Link></li>
-                  <li><Link to="/services">IT Consulting</Link></li>
+                  <li><Link to="/services/it-consulting">IT Consulting</Link></li>
+                  <li><Link to="/services/cloud-solutions">Cloud Solutions</Link></li>
+                  <li><Link to="/services/custom-software">Custom Software Development</Link></li>
+                  <li><Link to="/services/cybersecurity">Cybersecurity</Link></li>
+                  <li><Link to="/services/digital-marketing">Digital Marketing</Link></li>
+                  <li><Link to="/services/seo">SEO</Link></li>
+                  <li><Link to="/services/design">Graphics & UI/UX Design</Link></li>
                 </ul>
               </details>
             </li>
