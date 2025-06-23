@@ -24,7 +24,7 @@ const Contact = () => {
                 </span>
                 <div>
                   <div className="font-bold">Head Office</div>
-                  <div>123 Innovation Drive, Suite 400<br/>Nairobi, Kenya</div>
+                  <div>17 Tagutapadare, Mufakose<br/>Harare, Zimbabwe</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -72,7 +72,7 @@ const Contact = () => {
       <div className="max-w-5xl mx-auto mb-12 rounded-2xl overflow-hidden shadow-lg">
         <iframe
           title="MugoTech Location"
-          src="https://www.google.com/maps?q=123+Innovation+Drive,+Nairobi,+Kenya&output=embed"
+          src="https://www.google.com/maps?q=17+Tagutapadare,+Mufakose,+Harare,+Zimbabwe&output=embed"
           width="100%"
           height="350"
           style={{ border: 0 }}
