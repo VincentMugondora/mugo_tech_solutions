@@ -1,55 +1,6 @@
 import React from 'react';
-
-const articles = [
-  {
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80',
-    tag: 'SEO',
-    title: "The Importance of Mobile Optimization in Today's Digital Landscape",
-    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80',
-    tag: 'Insight',
-    title: 'Unlocking the Power of Video Marketing for Your Business',
-    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80',
-    tag: 'Insight',
-    title: 'Maximizing Your PPC Campaign: Best Practices for AdWords',
-    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80',
-    tag: 'Digital Marketing',
-    title: '10 Tips for Effective Email Marketing Campaigns',
-    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80',
-    tag: 'Digital Marketing',
-    title: 'Digital Marketing Trends to Watch in 2023',
-    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80',
-    tag: 'SEO',
-    title: 'The Ultimate Guide to Boosting Your Online Presence through SEO',
-    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-  },
-];
+import blogs from './blogs.json';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   return (
@@ -61,8 +12,8 @@ const Blog = () => {
             <p className="text-gray-500">Archives</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {articles.map((a, i) => (
-              <div key={i} className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+            {blogs.map((a) => (
+              <Link to={`/blog/${a.slug}`} key={a.slug} className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col hover:scale-[1.02] transition-transform">
                 <div className="relative">
                   <img src={a.image} alt={a.title} className="w-full h-48 object-cover" />
                   <span className="absolute top-4 left-4 bg-orange-400 text-white text-xs font-bold px-3 py-1 rounded-full shadow">{a.tag}</span>
@@ -76,7 +27,7 @@ const Blog = () => {
                     <span>{a.comments}</span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

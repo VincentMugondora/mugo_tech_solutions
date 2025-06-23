@@ -1,80 +1,11 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-
-// Placeholder blog data
-const blogPosts = [
-  {
-    slug: 'video-marketing-power',
-    tag: 'Insight',
-    title: 'Unlocking the Power of Video Marketing for Your Business',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-    image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80',
-    content: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.',
-      'Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.',
-      'Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.',
-      'Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna, sed consequat.',
-    ],
-    quote: 'Advertising and marketing collaboration and business people in meeting or brainstorming for strategy planning.',
-    quoteImage: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80',
-    author: {
-      name: 'Natalie Stanley',
-      avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
-      bio: 'Hi, this is dummy biographical info for the design template kit mocracreativ. If any questions do hesitate to send us a message on the profile page ThemeForest.'
-    }
-  },
-  // ...add more posts as needed
-];
-
-const latestPosts = [
-  {
-    title: "The Importance of Mobile Optimization in Today's Digital Landscape",
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=100&q=80',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-    slug: 'mobile-optimization-digital-landscape',
-  },
-  {
-    title: 'Unlocking the Power of Video Marketing for Your Business',
-    image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=100&q=80',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-    slug: 'video-marketing-power',
-  },
-  {
-    title: 'Maximizing Your PPC Campaign: Best Practices for AdWords',
-    image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=100&q=80',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-    slug: 'ppc-campaign-adwords',
-  },
-  {
-    title: '10 Tips for Effective Email Marketing Campaigns',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=100&q=80',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-    slug: 'email-marketing-campaigns',
-  },
-  {
-    title: 'Digital Marketing Trends to Watch in 2023',
-    image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=100&q=80',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-    slug: 'digital-marketing-trends-2023',
-  },
-  {
-    title: 'The Ultimate Guide to Boosting Your Online Presence through SEO',
-    image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=100&q=80',
-    date: 'March 11, 2023',
-    comments: 'No Comments',
-    slug: 'seo-ultimate-guide',
-  },
-];
+import blogs from './blogs.json';
 
 const BlogPost = () => {
   const { slug } = useParams();
-  const post = blogPosts.find((p) => p.slug === slug) || blogPosts[0];
+  const post = blogs.find((p) => p.slug === slug) || blogs[0];
+  const latestPosts = blogs.slice(0, 6);
 
   return (
     <div className="pt-24 pb-12 bg-gray-50 min-h-screen w-full">
