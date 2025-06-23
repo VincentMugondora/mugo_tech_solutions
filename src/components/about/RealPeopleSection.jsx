@@ -23,71 +23,73 @@ const collageImages = [
 ];
 
 const RealPeopleSection = () => (
-  <section className="relative flex flex-col md:flex-row items-center justify-between gap-14 py-16 px-4 md:px-20 bg-transparent z-10 overflow-hidden">
-    {/* Soft blurred background shapes */}
-    <div className="absolute inset-0 -z-10">
-      <div className="absolute left-0 top-0 w-2/3 h-2/3 bg-gradient-to-br from-[#FF9944]/20 via-indigo-100/40 to-white rounded-full blur-3xl" />
-      <div className="absolute right-0 bottom-0 w-1/2 h-1/2 bg-gradient-to-tr from-indigo-200/30 via-white to-[#FF9944]/10 rounded-full blur-2xl" />
-    </div>
-    {/* Right: Collage effect */}
-    <div className="flex-[1.3] flex items-center justify-center relative min-w-[340px] order-1 md:order-2 mb-10 md:mb-0">
-      <div className="relative flex items-center justify-center">
-        {/* Animated Orange swoosh/shape */}
-        <svg className="absolute -top-16 -right-16 w-[380px] h-[300px] z-0 animate-float" viewBox="0 0 400 340" fill="none" xmlns="http://www.w3.org/2000/svg" style={{animation: 'float 8s ease-in-out infinite alternate'}}>
-          <defs>
-            <linearGradient id="swooshGradient" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#FF9944" stopOpacity="0.35" />
-              <stop offset="100%" stopColor="#FF9944" stopOpacity="0.15" />
-            </linearGradient>
-          </defs>
-          <path d="M320 40C370 120 370 260 260 320C150 380 50 260 80 160C110 60 270-40 320 40Z" fill="url(#swooshGradient)" />
-        </svg>
-        {/* Main team image, rotated */}
-        <img
-          src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=facearea&w=600&h=400&facepad=2&q=80"
-          alt="MugoTech Team"
-          className="w-[320px] h-[220px] object-cover rounded-3xl border-8 border-white shadow-2xl relative z-10 rotate-2"
-        />
-        {/* Collage: two smaller overlapping images */}
-        <img
-          src={collageImages[0]}
-          alt="Team member"
-          className="absolute -bottom-6 left-4 w-20 h-20 object-cover rounded-full border-4 border-white shadow-lg z-20"
-        />
-        <img
-          src={collageImages[1]}
-          alt="Client"
-          className="absolute top-6 -right-10 w-16 h-16 object-cover rounded-full border-4 border-white shadow-lg z-20"
-        />
-        {/* 25+ Years badge with trophy icon */}
-        <div className="absolute -top-8 -left-8 bg-white/80 backdrop-blur-md rounded-2xl px-6 py-4 shadow-2xl flex flex-col items-center z-30 border border-gray-100 animate-bounce-slow" style={{boxShadow: '0 8px 32px 0 rgba(255,153,68,0.15)'}}>
-          <span className="flex items-center gap-2 text-2xl font-extrabold text-[#FF9944] leading-none">
-            <svg className="w-5 h-5 text-[#FF9944]" fill="currentColor" viewBox="0 0 24 24"><path d="M17 3a1 1 0 0 1 1 1v2a3 3 0 0 1-2 2.83V9a5 5 0 1 1-6 0V8.83A3 3 0 0 1 6 6V4a1 1 0 0 1 1-1h10zm-5 16a7 7 0 0 0 7-7V7h2a1 1 0 0 1 1 1v2a9 9 0 1 1-18 0V8a1 1 0 0 1 1-1h2v2a7 7 0 0 0 7 7z"/></svg>
-            25+
-          </span>
-          <span className="text-xs text-indigo-800 font-semibold whitespace-nowrap">Years of Experience</span>
+  <section className="relative flex flex-col md:flex-row items-center justify-between gap-14 py-16 bg-transparent z-10 overflow-hidden">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 w-full flex flex-col md:flex-row items-center justify-between gap-14">
+      {/* Soft blurred background shapes */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute left-0 top-0 w-2/3 h-2/3 bg-gradient-to-br from-[#FF9944]/20 via-indigo-100/40 to-white rounded-full blur-3xl" />
+        <div className="absolute right-0 bottom-0 w-1/2 h-1/2 bg-gradient-to-tr from-indigo-200/30 via-white to-[#FF9944]/10 rounded-full blur-2xl" />
+      </div>
+      {/* Right: Collage effect */}
+      <div className="flex-[1.3] flex items-center justify-center relative min-w-[340px] order-1 md:order-2 mb-10 md:mb-0">
+        <div className="relative flex items-center justify-center">
+          {/* Animated Orange swoosh/shape */}
+          <svg className="absolute -top-16 -right-16 w-[380px] h-[300px] z-0 animate-float" viewBox="0 0 400 340" fill="none" xmlns="http://www.w3.org/2000/svg" style={{animation: 'float 8s ease-in-out infinite alternate'}}>
+            <defs>
+              <linearGradient id="swooshGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stopColor="#FF9944" stopOpacity="0.35" />
+                <stop offset="100%" stopColor="#FF9944" stopOpacity="0.15" />
+              </linearGradient>
+            </defs>
+            <path d="M320 40C370 120 370 260 260 320C150 380 50 260 80 160C110 60 270-40 320 40Z" fill="url(#swooshGradient)" />
+          </svg>
+          {/* Main team image, rotated */}
+          <img
+            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=facearea&w=600&h=400&facepad=2&q=80"
+            alt="MugoTech Team"
+            className="w-[320px] h-[220px] object-cover rounded-3xl border-8 border-white shadow-2xl relative z-10 rotate-2"
+          />
+          {/* Collage: two smaller overlapping images */}
+          <img
+            src={collageImages[0]}
+            alt="Team member"
+            className="absolute -bottom-6 left-4 w-20 h-20 object-cover rounded-full border-4 border-white shadow-lg z-20"
+          />
+          <img
+            src={collageImages[1]}
+            alt="Client"
+            className="absolute top-6 -right-10 w-16 h-16 object-cover rounded-full border-4 border-white shadow-lg z-20"
+          />
+          {/* 25+ Years badge with trophy icon */}
+          <div className="absolute -top-8 -left-8 bg-white/80 backdrop-blur-md rounded-2xl px-6 py-4 shadow-2xl flex flex-col items-center z-30 border border-gray-100 animate-bounce-slow" style={{boxShadow: '0 8px 32px 0 rgba(255,153,68,0.15)'}}>
+            <span className="flex items-center gap-2 text-2xl font-extrabold text-[#FF9944] leading-none">
+              <svg className="w-5 h-5 text-[#FF9944]" fill="currentColor" viewBox="0 0 24 24"><path d="M17 3a1 1 0 0 1 1 1v2a3 3 0 0 1-2 2.83V9a5 5 0 1 1-6 0V8.83A3 3 0 0 1 6 6V4a1 1 0 0 1 1-1h10zm-5 16a7 7 0 0 0 7-7V7h2a1 1 0 0 1 1 1v2a9 9 0 1 1-18 0V8a1 1 0 0 1 1-1h2v2a7 7 0 0 0 7 7z"/></svg>
+              25+
+            </span>
+            <span className="text-xs text-indigo-800 font-semibold whitespace-nowrap">Years of Experience</span>
+          </div>
         </div>
       </div>
-    </div>
-    {/* Left: Glassy card with accent bar */}
-    <div className="flex-1 max-w-xl flex order-2 md:order-1 w-full">
-      <div className="hidden md:block w-2 bg-[#FF9944] rounded-2xl mr-6" style={{minHeight: '240px'}}></div>
-      <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-3xl shadow-2xl p-8 md:p-10 flex flex-col items-start relative w-full">
-        <span className="uppercase text-xs font-bold text-[#FF9944] tracking-widest mb-2">Who we are</span>
-        <h2 className="text-2xl md:text-3xl font-extrabold text-indigo-900 leading-tight mb-3">Tech expertise. Real results.</h2>
-        <p className="text-indigo-700 mb-6 text-base">MugoTech delivers secure, innovative solutions that help your business grow.</p>
-        <div className="flex flex-col gap-3 w-full">
-          {services.map((s) => (
-            <div key={s.title} className="flex items-center gap-4 bg-white/60 backdrop-blur-md border border-indigo-100 rounded-xl px-4 py-3 shadow-md transition-transform duration-200 hover:scale-[1.03] hover:shadow-lg cursor-pointer">
-              <div className="bg-[#FF9944]/10 rounded-lg p-2 flex items-center justify-center">
-                {s.icon}
+      {/* Left: Glassy card with accent bar */}
+      <div className="flex-1 max-w-xl flex order-2 md:order-1 w-full">
+        <div className="hidden md:block w-2 bg-[#FF9944] rounded-2xl mr-6" style={{minHeight: '240px'}}></div>
+        <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-3xl shadow-2xl p-8 md:p-10 flex flex-col items-start relative w-full">
+          <span className="uppercase text-xs font-bold text-[#FF9944] tracking-widest mb-2">Who we are</span>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-indigo-900 leading-tight mb-3">Tech expertise. Real results.</h2>
+          <p className="text-indigo-700 mb-6 text-base">MugoTech delivers secure, innovative solutions that help your business grow.</p>
+          <div className="flex flex-col gap-3 w-full">
+            {services.map((s) => (
+              <div key={s.title} className="flex items-center gap-4 bg-white/60 backdrop-blur-md border border-indigo-100 rounded-xl px-4 py-3 shadow-md transition-transform duration-200 hover:scale-[1.03] hover:shadow-lg cursor-pointer">
+                <div className="bg-[#FF9944]/10 rounded-lg p-2 flex items-center justify-center">
+                  {s.icon}
+                </div>
+                <div>
+                  <div className="font-semibold text-indigo-900 text-base flex items-center gap-2">{s.title}</div>
+                  <div className="text-indigo-700 text-sm">{s.desc}</div>
+                </div>
               </div>
-              <div>
-                <div className="font-semibold text-indigo-900 text-base flex items-center gap-2">{s.title}</div>
-                <div className="text-indigo-700 text-sm">{s.desc}</div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
