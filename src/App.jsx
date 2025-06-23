@@ -15,6 +15,7 @@ import Contact from './pages/Contact'
 import Pricing from './pages/Pricing'
 import Team from './pages/Team'
 import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 import Footer from './components/Footer';
 
 const Pages = () => <div className='p-8'><h2 className='text-2xl font-bold'>Pages</h2></div>
@@ -38,6 +39,7 @@ const App = () => {
         <Route path='/pricing' element={<Pricing />} />
         <Route path='/team' element={<Team />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/blog/:slug' element={<BlogPost />} />
         <Route path='/pages' element={<Pages />} />
       </Routes>
       <Footer />
