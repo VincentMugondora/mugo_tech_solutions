@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
-      <nav className="w-full bg-white border-b border-gray-200 shadow-sm px-0 py-3">
+      <nav className="w-full bg-gradient-to-r from-white via-indigo-50 to-orange-50 border-b border-gray-200 shadow-lg px-0 py-3 backdrop-blur-md">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 md:px-8">
           {/* Logo */}
           <div className="flex items-center">
@@ -111,20 +111,24 @@ const Header = () => {
               onMouseEnter={handleResourcesEnter}
               onMouseLeave={handleResourcesLeave}
             >
-              <button className="flex items-center relative pb-1 transition-colors duration-200 hover:text-indigo-700 after:content-[''] after:block after:h-0.5 after:bg-indigo-500 after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded-full after:mt-1">
+              <button className="flex items-center relative pb-1 transition-colors duration-200 hover:text-orange-600 after:content-[''] after:block after:h-0.5 after:bg-orange-400 after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded-full after:mt-1">
                 Resources
                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
               <ul
-                className="absolute left-0 mt-3 w-44 bg-white rounded-xl shadow-lg transition-all duration-200 text-base z-20 border border-gray-100"
+                className="absolute left-0 mt-3 w-56 bg-white/95 rounded-xl shadow-2xl transition-all duration-200 text-base z-20 border border-gray-100 backdrop-blur-md"
                 style={{ opacity: resourcesOpen ? 1 : 0, pointerEvents: resourcesOpen ? 'auto' : 'none' }}
                 onMouseEnter={handleResourcesEnter}
                 onMouseLeave={handleResourcesLeave}
               >
-                <li><Link to="/pages" className="block px-5 py-2 hover:bg-indigo-50 rounded-t-xl transition">Blog</Link></li>
-                <li><Link to="/pages" className="block px-5 py-2 hover:bg-indigo-50 rounded-b-xl transition">Case Studies</Link></li>
+                <li><Link to="/pages" className="block px-5 py-2 hover:bg-orange-50 rounded-t-xl transition">Blog</Link></li>
+                <li><Link to="/pages" className="block px-5 py-2 hover:bg-orange-50 transition">Case Studies</Link></li>
+                <li><Link to="/team" className="block px-5 py-2 hover:bg-orange-50 transition">Team</Link></li>
+                <li><Link to="/pricing" className="block px-5 py-2 hover:bg-orange-50 transition">Pricing</Link></li>
+                <li><Link to="/about" className="block px-5 py-2 hover:bg-orange-50 transition">About Us</Link></li>
+                <li><Link to="/contact" className="block px-5 py-2 hover:bg-orange-50 rounded-b-xl transition">Contact Us</Link></li>
               </ul>
             </li>
           </ul>
@@ -165,7 +169,7 @@ const Header = () => {
 
       {/* Mobile Nav */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-lg rounded-b-2xl border-t border-gray-200">
+        <div className="md:hidden bg-white/95 shadow-2xl rounded-b-2xl border-t border-gray-200 backdrop-blur-md">
           <ul className="flex flex-col items-start space-y-3 px-7 py-6 font-semibold text-base text-gray-700">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
@@ -193,6 +197,10 @@ const Header = () => {
                 <ul className="ml-4 mt-2 space-y-1">
                   <li><Link to="/pages">Blog</Link></li>
                   <li><Link to="/pages">Case Studies</Link></li>
+                  <li><Link to="/team">Team</Link></li>
+                  <li><Link to="/pricing">Pricing</Link></li>
+                  <li><Link to="/about">About Us</Link></li>
+                  <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
               </details>
             </li>
