@@ -121,7 +121,7 @@ const Header = () => {
                 onMouseEnter={handleResourcesEnter}
                 onMouseLeave={handleResourcesLeave}
               >
-                <li><Link to="/pages" className="block px-5 py-2 hover:bg-orange-50 rounded-t-xl transition">Blog</Link></li>
+                <li><Link to="/blog" className="block px-5 py-2 hover:bg-orange-50 rounded-t-xl transition">Blog</Link></li>
                 <li><Link to="/pages" className="block px-5 py-2 hover:bg-orange-50 transition">Case Studies</Link></li>
                 <li><Link to="/team" className="block px-5 py-2 hover:bg-orange-50 transition">Team</Link></li>
                 <li><Link to="/pricing" className="block px-5 py-2 hover:bg-orange-50 transition">Pricing</Link></li>
