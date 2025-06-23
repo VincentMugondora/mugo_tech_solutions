@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
-import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
@@ -12,8 +11,8 @@ import Cybersecurity from './pages/services/Cybersecurity'
 import DigitalMarketing from './pages/services/DigitalMarketing'
 import SEO from './pages/services/SEO'
 import Design from './pages/services/Design'
+import Contact from './pages/Contact'
 
-const Contact = () => <div className='p-8'><h2 className='text-2xl font-bold'>Contact Us</h2></div>
 const Pages = () => <div className='p-8'><h2 className='text-2xl font-bold'>Pages</h2></div>
 
 const App = () => {
@@ -34,7 +33,6 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/pages' element={<Pages />} />
       </Routes>
-      <Footer />
     </Router>
   )
 }
