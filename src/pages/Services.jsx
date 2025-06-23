@@ -11,7 +11,7 @@ import ContactTrialSection from '../components/about/ContactTrialSection';
 
 const Services = () => {
   return (
-    <div className="bg-white min-h-screen flex flex-col">
+    <div className="bg-white min-h-screen flex flex-col max-w-7xl mx-auto px-4 md:px-8">
       <ServicesPageHero />
       <ServicesIntroSection />
       <FeaturedServices />

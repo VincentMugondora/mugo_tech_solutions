@@ -12,17 +12,17 @@ import ContactSection from '../components/home/ContactSection'
 
 const Home = () => {
   return (
-    <div>
-        <HeroSection />
-        <AboutSection />
-        <FeaturedServices />
-        <ClientStats />
-        <WhyChooseUs />
-        <PricingPlans />
-        <MarketingHero />
-        <TopServices />
-        <ProjectSatisfaction />
-        <ContactSection />
+    <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <HeroSection />
+      <AboutSection />
+      <FeaturedServices />
+      <ClientStats />
+      <WhyChooseUs />
+      <PricingPlans />
+      <MarketingHero />
+      <TopServices />
+      <ProjectSatisfaction />
+      <ContactSection />
     </div>
   )
 }

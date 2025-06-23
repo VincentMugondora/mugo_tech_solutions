@@ -86,7 +86,7 @@ const faqs = [
 const Pricing = () => {
   const [openFaq, setOpenFaq] = useState(null);
   return (
-    <div className="pt-24 pb-12 bg-gray-50 min-h-screen">
+    <div className="pt-24 pb-12 bg-gray-50 min-h-screen max-w-7xl mx-auto px-4 md:px-8">
       {/* Pricing Plan Section */}
       <div className="text-center mb-10">
         <h1 className="text-3xl md:text-4xl font-bold text-indigo-900 mb-2">Our Pricing Plans</h1>
