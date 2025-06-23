@@ -12,6 +12,7 @@ import DigitalMarketing from './pages/services/DigitalMarketing'
 import SEO from './pages/services/SEO'
 import Design from './pages/services/Design'
 import Contact from './pages/Contact'
+import Pricing from './pages/Pricing'
 import Footer from './components/Footer';
 
 const Pages = () => <div className='p-8'><h2 className='text-2xl font-bold'>Pages</h2></div>
@@ -32,6 +33,7 @@ const App = () => {
         <Route path='/services/seo' element={<SEO />} />
         <Route path='/services/design' element={<Design />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/pricing' element={<Pricing />} />
         <Route path='/pages' element={<Pages />} />
       </Routes>
       <Footer />
