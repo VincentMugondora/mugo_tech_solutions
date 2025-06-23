@@ -90,6 +90,14 @@ const Header = () => {
             </li>
             <li>
               <Link
+                to="/pricing"
+                className="relative pb-1 transition-colors duration-200 hover:text-indigo-700 after:content-[''] after:block after:h-0.5 after:bg-indigo-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded-full after:mt-1"
+              >
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/contact"
                 className="relative pb-1 transition-colors duration-200 hover:text-indigo-700 after:content-[''] after:block after:h-0.5 after:bg-indigo-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded-full after:mt-1"
               >
@@ -174,6 +182,7 @@ const Header = () => {
                 </ul>
               </details>
             </li>
+            <li><Link to="/pricing">Pricing</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li>
               <details>
