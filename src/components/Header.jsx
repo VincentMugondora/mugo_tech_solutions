@@ -51,6 +51,7 @@ const Header = () => {
             {[
               { label: "Home", to: "/" },
               { label: "About Us", to: "/about" },
+              { label: "Portfolio", to: "/portfolio" },
             ].map((item) => (
               <li key={item.to}>
                 <Link
@@ -171,6 +172,7 @@ const Header = () => {
           <ul className="flex flex-col items-start space-y-3 px-7 py-6 font-semibold text-base text-gray-700">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/portfolio">Portfolio</Link></li>
             <li>
               <details>
                 <summary className="cursor-pointer">Services</summary>

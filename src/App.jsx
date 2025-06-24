@@ -18,6 +18,7 @@ import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
+import Portfolio from './pages/Portfolio';
 
 const Pages = () => <div className='p-8'><h2 className='text-2xl font-bold'>Pages</h2></div>
 
@@ -42,6 +43,7 @@ const App = () => {
         <Route path='/blog' element={<Blog />} />
         <Route path='/blog/:slug' element={<BlogPost />} />
         <Route path='/pages' element={<Pages />} />
+        <Route path='/portfolio' element={<Portfolio />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
